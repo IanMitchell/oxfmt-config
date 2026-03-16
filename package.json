@@ -1,0 +1,27 @@
+{
+	"name": "@0x57/oxfmt-config",
+	"version": "1.0.3",
+	"description": "Shared oxfmt configuration used by 0x57 projects",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/oxfmt.config.d.ts",
+			"default": "./dist/oxfmt.config.js"
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"format": "oxfmt",
+		"build": "tsc",
+		"prepare": "bun run build"
+	},
+	"devDependencies": {
+		"@0x57/typescript-config": "^1.1.0",
+		"@typescript/native-preview": "7.0.0-dev.20260316.1"
+	},
+	"peerDependencies": {
+		"oxfmt": "^0.41.0"
+	}
+}
