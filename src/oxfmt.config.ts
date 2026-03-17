@@ -9,12 +9,16 @@ export const config = defineConfig({
 				groupName: "react",
 				elementNamePattern: ["react", "react-dom"],
 			},
+			{
+				groupName: "vitest",
+				elementNamePattern: ["vitest"],
+			},
 		],
 		groups: [
 			// Side effects up at top
 			["side_effect"],
 			// Lift react when present
-			["react", "builtin"],
+			["vitest", "react", "builtin"],
 			// Third party deps
 			["external"],
 			// Local imports
