@@ -11,7 +11,7 @@ export const config = defineConfig({
 			},
 			{
 				groupName: "vitest",
-				elementNamePattern: ["vitest"],
+				elementNamePattern: ["vitest", "vite-plus/test"],
 			},
 		],
 		groups: [
@@ -26,5 +26,6 @@ export const config = defineConfig({
 			// Style side effect imports at bottom
 			["side_effect_style"],
 		],
+		newlinesBetween: false,
 	},
 });
