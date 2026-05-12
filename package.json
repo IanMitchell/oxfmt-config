@@ -1,6 +1,6 @@
 {
 	"name": "@0x57/oxfmt-config",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "Shared oxfmt configuration used by 0x57 projects",
 	"type": "module",
 	"exports": {
@@ -18,10 +18,10 @@
 		"prepare": "bun run build"
 	},
 	"devDependencies": {
-		"@0x57/typescript-config": "^1.1.0",
-		"@typescript/native-preview": "7.0.0-dev.20260316.1"
+		"@0x57/typescript-config": "1.3.2",
+		"@typescript/native-preview": "7.0.0-dev.20260512.1"
 	},
 	"peerDependencies": {
-		"oxfmt": "^0.41.0"
+		"oxfmt": "0.49.0"
 	}
 }
