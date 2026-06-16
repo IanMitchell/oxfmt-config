@@ -1,6 +1,7 @@
+import type { OxfmtConfig } from "oxfmt";
 import { defineConfig } from "oxfmt";
 
-export const config = defineConfig({
+export const config: OxfmtConfig = defineConfig({
 	quoteProps: "consistent",
 	useTabs: true,
 	sortImports: {
@@ -11,7 +12,7 @@ export const config = defineConfig({
 			},
 			{
 				groupName: "vitest",
-				elementNamePattern: ["vitest", "vite-plus/test"],
+				elementNamePattern: ["vite-plus", "vitest", "vite-plus/test"],
 			},
 		],
 		groups: [
