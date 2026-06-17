@@ -9,7 +9,7 @@ bun add -D @0x57/oxfmt-config
 ```
 
 ```ts
-export { config } from "@0x57/oxfmt-config";
+import { config } from "@0x57/oxfmt-config";
 export default config;
 ```
 
