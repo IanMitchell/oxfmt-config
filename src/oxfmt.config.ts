@@ -14,12 +14,16 @@ export const config: OxfmtConfig = defineConfig({
 				groupName: "vitest",
 				elementNamePattern: ["vite-plus", "vitest", "vite-plus/test"],
 			},
+			{
+				groupName: "next",
+				elementNamePattern: ["next"],
+			},
 		],
 		groups: [
 			// Side effects up at top
 			["side_effect"],
 			// Lift react when present
-			["vitest", "react", "builtin"],
+			["next", "vitest", "react", "builtin"],
 			// Third party deps
 			["external"],
 			// Local imports
