@@ -1,6 +1,6 @@
 {
 	"name": "@0x57/oxfmt-config",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"description": "Shared oxfmt configuration used by 0x57 projects",
 	"type": "module",
 	"exports": {
@@ -14,14 +14,27 @@
 	},
 	"scripts": {
 		"format": "oxfmt",
-		"build": "tsgo",
+		"build": "tsc",
 		"prepare": "bun run build"
 	},
 	"devDependencies": {
-		"@0x57/typescript-config": "2.0.0",
-		"@typescript/native-preview": "7.0.0-dev.20260616.1"
+		"@0x57/typescript-config": "2.0.2",
+		"typescript": "7.0.2"
 	},
 	"peerDependencies": {
-		"oxfmt": "0.55.0"
+		"oxfmt": "0.63.0"
+	},
+	"devEngines": {
+		"packageManager": [
+			{
+				"name": "bun",
+				"version": "1.3.14",
+				"onFail": "download"
+			},
+			{
+				"name": "npm",
+				"version": "11.17.0"
+			}
+		]
 	}
 }
